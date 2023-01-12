@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Head from "next/head";
 import styled from "styled-components";
+import { useMediaQuery } from "react-responsive";
 import { useState } from "react";
 import { useRecoilState } from "recoil";
 
-const index = () => {
+export default function index() {
   return (
     <>
       <Head>
@@ -15,9 +16,7 @@ const index = () => {
       </Main>
     </>
   );
-};
-
-export default index;
+}
 
 const Main = styled.div``;
 
