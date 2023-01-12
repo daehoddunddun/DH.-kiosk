@@ -11,4 +11,15 @@
 
 해당 기사 외에도 요새 유튜브나 SNS에서 사회 문제로 이슈화되고 있는 문제가 바로 "어르신들의 키오스크 사용 어려움"이다. 나는 이를 해결할 방법이 없을까 많은 고민을 하였지만 마땅한 해결책이 나온건 아니다. 하지만 조금씩 내 프로젝트에, 내 아이디어를 담아, 나중에 기회가 된다면 창업 해커톤 또는 관련 문제에 대한 기획 아이디어를 제출할 일이 있으면 이 프로젝트를 활용하여 "키오스크 사용의 어려움을 겪고 계신 어르신들"에게 도움을 드리고 싶다. 
 
-🐶 구현기능: ㅇ
+🐶 구현기능: 노인층도 사용에 불편함이 없는 Kiosk 만들기 
+
+🐶 적용기술(1차) :  <img src="https://img.shields.io/badge/Next.js-gray?style=flat&logo=Next.js&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/React-aqua?style=flat&logo=react&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/TypeScript-blue?style=flat&logo=TypeScript&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/styled_components-green?style=flat&logo=styledcomponents&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/Recoil-purple?style=flat&logo=Recoil&logoColor=white&magin-left=5px"/>
+
+🐶 적용기술(2차-구상내용) : 실제 배포할 서버/제작한 소프트웨어를 실행할 장비-터치기능/개인적으로 추후에 음성인식,안내 사운드를 담고 싶어서 입출력 장치
+
+-----
+
+1. 프로젝트 준비단계(01/10 ~ 01/12)
+- Next.js + TypeScript + styled-component 프로젝트 생성 및 개발환경 세팅 (01/10)
+- Next.js + TypeScript 프로젝트 진행을 위해 부족한 내용 복습(01/11)
+- Readme 작성 및 프로젝트 시작 (01/12)
