@@ -1,36 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Kiosk_Project 통한 사회문제 고민해보기
 
-## Getting Started
+🐶 기간 : 2023. 01. 10 ~
 
-First, run the development server:
+🐶 목적 : 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+햄버거를 사먹으려고 프랜차이즈 매장에 방문했던 경험이 있다. 그때 내 앞에서 주문을 하고 계신 어르신을 보았고, 한동안을 주문을 못하셔서 돌아가시려는 모습을 봤던적이 있다. 그때 돌아가시려는 할머니를 붙잡고 주문을 도와드렸는데 할머니께서는 "고마워요 학생, 우리 같은 노인들은 이게(키오스크) 너무 어려워서 뭘 사먹지도 못하겠어" 말과 함께 쓸쓸한 미소를 지으셨던 모습이 너무 기억에 남았다. 아래는 노인층의 키오스크 사용이 얼마나 어려움을 겪고 있는지 알려주는 기사이다. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<img width="560" alt="스크린샷 2023-01-12 오후 3 15 00" src="https://user-images.githubusercontent.com/98578138/211991984-3d8e647d-8f06-4053-9b99-2fc7a8d4402a.png">
+<img width="554" alt="스크린샷 2023-01-12 오후 3 15 09" src="https://user-images.githubusercontent.com/98578138/211992046-5dbdfa01-e70d-45a5-aea0-f141c8b3f583.png">
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+해당 기사 외에도 요새 유튜브나 SNS에서 사회 문제로 이슈화되고 있는 문제가 바로 "어르신들의 키오스크 사용 어려움"이다. 나는 이를 해결할 방법이 없을까 많은 고민을 하였지만 마땅한 해결책이 나온건 아니다. 하지만 조금씩 내 프로젝트에, 내 아이디어를 담아, 나중에 기회가 된다면 창업 해커톤 또는 관련 문제에 대한 기획 아이디어를 제출할 일이 있으면 이 프로젝트를 활용하여 "키오스크 사용의 어려움을 겪고 계신 어르신들"에게 도움을 드리고 싶다. 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+🐶 구현기능: ㅇ
