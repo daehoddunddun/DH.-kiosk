@@ -1,4 +1,4 @@
-# Kiosk_Project 통한 사회문제 고민해보기
+# Kiosk_Project를 통한 사회문제 개선
 
 🐶 기간 : 2023. 01. 10 ~
 
