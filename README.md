@@ -13,13 +13,13 @@
 
 🐶 구현기능: 노인층도 사용에 불편함이 없는 Kiosk 만들기 
 
-🐶 적용기술(1차) :  <img src="https://img.shields.io/badge/Next.js-gray?style=flat&logo=Next.js&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/React-aqua?style=flat&logo=react&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/TypeScript-blue?style=flat&logo=TypeScript&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/styled_components-green?style=flat&logo=styledcomponents&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/Recoil-purple?style=flat&logo=Recoil&logoColor=white&magin-left=5px"/>
+🐶 적용기술(1차) :  <img src="https://img.shields.io/badge/Next.js-gray?style=flat&logo=Next.js&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/TypeScript-blue?style=flat&logo=TypeScript&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/styled_components-green?style=flat&logo=styledcomponents&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/Recoil-purple?style=flat&logo=Recoil&logoColor=white&magin-left=5px"/>
 
 🐶 적용기술(2차-구상내용) : 실제 배포할 서버/제작한 소프트웨어를 실행할 장비-터치기능/개인적으로 추후에 음성인식,안내 사운드를 담고 싶어서 입출력 장치
 
 -----
 
 1. 프로젝트 준비단계(01/10 ~ 01/12)
-- Next.js + TypeScript + styled-component 프로젝트 생성 및 개발환경 세팅 (01/10)
+- Next.js + TypeScript + styled-component + Recoil 프로젝트 생성 및 개발환경 세팅 (01/10)
 - Next.js + TypeScript 프로젝트 진행을 위해 부족한 내용 복습(01/11)
 - Readme 작성 및 프로젝트 시작 (01/12)
