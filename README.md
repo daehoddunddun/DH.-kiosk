@@ -15,6 +15,8 @@
 
 🐶 구현기능: 노인층도 사용에 불편함이 없는 Kiosk 만들기 
 
+🐶 프로젝트 기획 : https://goofy-statistic-5ea.notion.site/Kiosk_Project-6b0e10e028d147038612a428e9bdae43
+
 🐶 참고자료: https://www.youtube.com/watch?v=TLln4FGpgF8&ab_channel=from.designer
 
 🐶 적용기술(1차) :  <img src="https://img.shields.io/badge/Next.js-gray?style=flat&logo=Next.js&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/TypeScript-blue?style=flat&logo=TypeScript&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/styled_components-green?style=flat&logo=styledcomponents&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/Recoil-purple?style=flat&logo=Recoil&logoColor=white&magin-left=5px"/>
