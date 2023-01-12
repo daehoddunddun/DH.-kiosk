@@ -24,4 +24,4 @@
 1. 프로젝트 준비단계(01/10 ~ 01/12)
 - Next.js + TypeScript + styled-component + Recoil 프로젝트 생성 및 개발환경 세팅 (01/10)
 - Next.js + TypeScript 프로젝트 진행을 위해 부족한 내용 복습(01/11)
-- Readme 작성 및 프로젝트 시작 (01/12)
+- Readme 작성 및 프로젝트 시작 / 프로젝트 기획 및 구상 (01/12)
