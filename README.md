@@ -15,6 +15,8 @@
 
 🐶 구현기능: 노인층도 사용에 불편함이 없는 Kiosk 만들기 
 
+🐶 참고자료: https://www.youtube.com/watch?v=TLln4FGpgF8&ab_channel=from.designer
+
 🐶 적용기술(1차) :  <img src="https://img.shields.io/badge/Next.js-gray?style=flat&logo=Next.js&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/TypeScript-blue?style=flat&logo=TypeScript&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/styled_components-green?style=flat&logo=styledcomponents&logoColor=white&magin-left=5px"/>, <img src="https://img.shields.io/badge/Recoil-purple?style=flat&logo=Recoil&logoColor=white&magin-left=5px"/>
 
 🐶 적용기술(2차-구상내용) : 실제 배포할 서버/제작한 소프트웨어를 실행할 장비-터치기능/개인적으로 추후에 음성인식,안내 사운드를 담고 싶어서 입출력 장치
