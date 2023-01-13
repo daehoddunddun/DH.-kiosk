@@ -5,6 +5,24 @@ import { useMediaQuery } from "react-responsive";
 import { useState } from "react";
 import { useRecoilState } from "recoil";
 
+const Main = styled.div`
+  width: 1000px;
+  height: 1000px;
+  background-color: black;
+`;
+
+const Test = styled.img`
+  width: 1000px;
+`;
+
+const Navs = styled.p`
+  width: 100%;
+  height: 20px;
+  background-color: black;
+  font-size: 30px;
+  color: blue;
+`;
+
 export default function index() {
   return (
     <>
@@ -12,15 +30,9 @@ export default function index() {
         <title>DH.Kiosk</title>
       </Head>
       <Main>
-        <Link href="/login">Link 태그 사용하기/css 적용하기</Link>
+        <Navs>ss</Navs>
+        <Test src="/virtual.gif" />
       </Main>
     </>
   );
 }
-
-const Main = styled.div``;
-
-const Nav = styled.div`
-  width: 100%;
-  background: #000;
-`;
