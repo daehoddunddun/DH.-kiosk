@@ -10,14 +10,10 @@ export default function index() {
       <style jsx>{style}</style>
       <div className="main-wrap">
         <div className="main-nav">2023년 1월 14일 신규 키오스크 출시!</div>
-        <img className="main-item" src="/main.jpg" alt="메인화면" />
+        <img className="main-item" src="/main.jpg" alt="커피 이미지" />
         <div className="order-wrap">
           <button className="order-btn">
-            <Link
-              className="test"
-              href="/product"
-              style={{ color: "white", fontSize: "40px" }}
-            >
+            <Link href="/order" style={{ color: "white", fontSize: "40px" }}>
               주문하기
             </Link>
           </button>
