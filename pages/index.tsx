@@ -1,8 +1,6 @@
 import Link from "next/link";
 import css from "styled-jsx/css";
-import { useMediaQuery } from "react-responsive";
-import { useState } from "react";
-import { useRecoilState } from "recoil";
+import Loding from "./common/Loding";
 
 export default function index() {
   return (

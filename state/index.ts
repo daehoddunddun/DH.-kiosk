@@ -1,5 +1,5 @@
 import { atom } from "recoil";
-export const pageNameState = atom({
+export const orderSelectState = atom({
   key: "pageNameState",
   default: "",
 });

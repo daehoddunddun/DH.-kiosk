@@ -5,6 +5,8 @@ export enum OrderCase {
   suggestion = "추천메뉴",
 }
 
+export type heandleOrderMenu = (value: string) => void;
+
 export default function OrderContainer() {
   return <OrderPresenter />;
 }

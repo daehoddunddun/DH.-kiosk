@@ -1,16 +1,35 @@
 import { OrderCase } from "./OrderContainer";
+import { useRecoilState } from "recoil";
+import { orderSelectState } from "../../state";
+import { heandleOrderMenu } from "./OrderContainer";
 import css from "styled-jsx/css";
-import Link from "next/link";
 
 export default function OrderPresenter() {
+  const [orderSelect, setOrderSelect] = useRecoilState(orderSelectState);
+
+  const heandleOrderMenu: heandleOrderMenu = (value) => {
+    setOrderSelect(value);
+    console.log(orderSelect);
+  };
+
   return (
     <>
       <style jsx>{style}</style>
       <div className="order-wrap">
         <strong className="order-nav">주문 방식을 선택해주세요.</strong>
         <div className="order-item">
-          <a className="order-btn">{OrderCase.direct}</a>
-          <a className="order-btn">{OrderCase.suggestion}</a>
+          <p
+            className="order-btn"
+            onClick={() => heandleOrderMenu(OrderCase.direct)}
+          >
+            {OrderCase.direct}
+          </p>
+          <p
+            className="order-btn"
+            onClick={() => heandleOrderMenu(OrderCase.suggestion)}
+          >
+            {OrderCase.suggestion}
+          </p>
         </div>
       </div>
     </>
