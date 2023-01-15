@@ -3,6 +3,7 @@ import { useRecoilState } from "recoil";
 import { orderSelectState } from "../../state";
 import { heandleOrderMenu } from "./OrderContainer";
 import css from "styled-jsx/css";
+import Link from "next/link";
 
 export default function OrderPresenter() {
   const [orderSelect, setOrderSelect] = useRecoilState(orderSelectState);
@@ -18,18 +19,20 @@ export default function OrderPresenter() {
       <div className="order-wrap">
         <strong className="order-nav">주문 방식을 선택해주세요.</strong>
         <div className="order-item">
-          <p
+          <Link
+            href="/order/direct"
             className="order-btn"
             onClick={() => heandleOrderMenu(OrderCase.direct)}
           >
-            {OrderCase.direct}
-          </p>
-          <p
+            <p>{OrderCase.direct}</p>
+          </Link>
+          <Link
+            href="/order/suggestion"
             className="order-btn"
             onClick={() => heandleOrderMenu(OrderCase.suggestion)}
           >
-            {OrderCase.suggestion}
-          </p>
+            <p>{OrderCase.suggestion}</p>
+          </Link>
         </div>
       </div>
     </>
@@ -39,7 +42,7 @@ export default function OrderPresenter() {
 const style = css`
   .order-nav {
     position: absolute;
-    top: 10%;
+    top: 8%;
     font-size: 100px;
   }
   .order-wrap {
@@ -55,7 +58,7 @@ const style = css`
     display: flex;
   }
 
-  .order-btn {
+  .order-item p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,5 +72,6 @@ const style = css`
     border-radius: 20px;
     border: 1px solid rgb(123, 114, 114);
     background: #dddddd;
+    color: black;
   }
 `;
