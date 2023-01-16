@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import { useRecoilValue } from "recoil";
 import { orderSelectState } from "../../../state";
 
-export default function SuggestionPresenter() {
+export default function HelpPresenter() {
   const orderType = useRecoilValue(orderSelectState);
 
   useEffect(() => {
     console.log("order-type", orderType);
   }, []);
-  return <div>Suggestion</div>;
+  return <div>Help</div>;
 }

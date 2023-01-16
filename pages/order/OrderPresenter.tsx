@@ -24,14 +24,31 @@ export default function OrderPresenter() {
             className="order-btn"
             onClick={() => heandleOrderMenu(OrderCase.direct)}
           >
-            <p>{OrderCase.direct}</p>
+            <p>
+              <span>키오스크 주문에 익숙하신가요?</span>"{OrderCase.direct}"
+              <img src="/order-food.png" />
+            </p>
+          </Link>
+          <Link
+            href="/order/help"
+            className="order-btn"
+            onClick={() => heandleOrderMenu(OrderCase.help)}
+          >
+            <p>
+              <span>키오스크 주문이 어려우신가요?</span>"{OrderCase.help}"
+              <img src="/social-care.png" />
+            </p>
           </Link>
           <Link
             href="/order/suggestion"
             className="order-btn"
             onClick={() => heandleOrderMenu(OrderCase.suggestion)}
           >
-            <p>{OrderCase.suggestion}</p>
+            <p>
+              <span>인기메뉴를 빠르게 주문해볼까요?</span>"
+              {OrderCase.suggestion}"
+              <img src="/like.png" />
+            </p>
           </Link>
         </div>
       </div>
@@ -40,11 +57,6 @@ export default function OrderPresenter() {
 }
 
 const style = css`
-  .order-nav {
-    position: absolute;
-    top: 8%;
-    font-size: 100px;
-  }
   .order-wrap {
     display: flex;
     flex-direction: column;
@@ -54,13 +66,20 @@ const style = css`
     height: 100vh;
   }
 
+  .order-nav {
+    position: absolute;
+    top: 8%;
+    font-size: 100px;
+  }
+
   .order-item {
     display: flex;
   }
 
   .order-item p {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     width: 600px;
     height: 600px;
@@ -73,5 +92,15 @@ const style = css`
     border: 1px solid rgb(123, 114, 114);
     background: #dddddd;
     color: black;
+  }
+  .order-item p span {
+    top: 100px;
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+
+  .order-item p img {
+    width: 150px;
+    height: 150px;
   }
 `;
