@@ -22,6 +22,9 @@ export default function OrderNav() {
 
 const style = css`
   .nav-wrap {
+    position: absolute;
+    top: 10px;
+    left: 10px;
     display: flex;
     align-items: center;
     width: 100%-20px;
