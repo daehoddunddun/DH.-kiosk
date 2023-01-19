@@ -25,26 +25,30 @@ export default function DirectPresenter({ OrderNav }: NavComponentType) {
   return (
     <>
       <style jsx>{style}</style>
-      <div className="direct-wrap">
-        <div className="direct-item">
-          <OrderNav />
-          <p className="direct-product-text">주문상품을 골라주세요</p>
-          <div className="direct-product-item">
-            {coffeeInfo.map((item: any) => {
-              return (
-                <div className="product-list-box">
-                  <img
-                    className="product-list-img"
-                    src={item.image}
-                    alt="커피이미지"
-                  />
-                  <strong className="product-list-title">{item.title}</strong>
-                </div>
-              );
-            })}
+      {coffeeInfo ? (
+        <div className="direct-wrap">
+          <div className="direct-item">
+            <OrderNav />
+            <p className="direct-product-text">주문상품을 골라주세요.</p>
+            <div className="direct-product-item">
+              {coffeeInfo.map((item: any) => {
+                return (
+                  <div className="product-list-box">
+                    <img
+                      className="product-list-img"
+                      src={item.image}
+                      alt="커피이미지"
+                    />
+                    <strong className="product-list-title">{item.title}</strong>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
+      ) : (
+        <div>add LodingComponent</div>
+      )}
     </>
   );
 }
@@ -71,21 +75,37 @@ const style = css`
     background: white;
   }
 
+  .direct-product-text {
+    margin-top: 50px;
+    font-size: 80px;
+  }
+
   .direct-product-item {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    overflow: scroll;
+    width: 100%;
+    height: 80%;
   }
 
   .product-list-box {
     display: flex;
-    width: 250px;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 40%;
+    cursor: pointer;
   }
 
   .product-list-img {
     width: 200px;
     height: 200px;
+    border-radius: 20px;
+  }
+
+  .product-list-title {
+    margin-top: 5px;
   }
 `;
