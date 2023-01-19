@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useRecoilValue } from "recoil";
 import { orderSelectState } from "../../../state";
 import { NavComponentType } from "./DirectContainer";
+import LoaderExampleSizesInverted from "../../common/Loding";
 import css from "styled-jsx/css";
 import axios from "axios";
 
@@ -30,24 +31,31 @@ export default function DirectPresenter({ OrderNav }: NavComponentType) {
           <div className="direct-item">
             <OrderNav />
             <p className="direct-product-text">주문상품을 골라주세요.</p>
-            <div className="direct-product-item">
-              {coffeeInfo.map((item: any) => {
-                return (
-                  <div className="product-list-box">
-                    <img
-                      className="product-list-img"
-                      src={item.image}
-                      alt="커피이미지"
-                    />
-                    <strong className="product-list-title">{item.title}</strong>
-                  </div>
-                );
-              })}
+            <div className="direct-product-left">
+              <div className="direct-product-item">
+                {coffeeInfo.map((item: any) => {
+                  return (
+                    <div className="product-list-box">
+                      <img
+                        className="product-list-img"
+                        src={item.image}
+                        alt="커피이미지"
+                      />
+                      <strong className="product-list-title">
+                        {item.title}
+                      </strong>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="direct-product-right">주문영역</div>
             </div>
           </div>
         </div>
       ) : (
-        <div>add LodingComponent</div>
+        <div>
+          <LoaderExampleSizesInverted />
+        </div>
       )}
     </>
   );
@@ -80,13 +88,20 @@ const style = css`
     font-size: 80px;
   }
 
+  .direct-product-left {
+    display: flex;
+    width: 100%;
+    height: 80%;
+  }
+
   .direct-product-item {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    overflow: scroll;
     width: 100%;
-    height: 80%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
   }
 
   .product-list-box {
@@ -96,16 +111,29 @@ const style = css`
     align-items: center;
     width: 20%;
     height: 40%;
+    margin: 0 5px 40px 5px;
+    border-radius: 20px;
     cursor: pointer;
   }
 
+  .product-list-box:hover {
+    background-color: #00000014;
+  }
+
   .product-list-img {
-    width: 200px;
-    height: 200px;
+    width: 80%;
+    height: 80%;
     border-radius: 20px;
   }
 
   .product-list-title {
-    margin-top: 5px;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .direct-product-right {
+    width: 40%;
+    height: 100%;
+    margin-left: 20px;
   }
 `;
