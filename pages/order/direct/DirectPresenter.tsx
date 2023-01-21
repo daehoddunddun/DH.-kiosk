@@ -1,26 +1,41 @@
 import { useEffect, useState } from "react";
-import { useRecoilValue } from "recoil";
-import { orderSelectState } from "../../../state";
-import { NavComponentType } from "./DirectContainer";
+import { useRecoilState, useRecoilValue } from "recoil";
+import { orderSelectState, drinkSelectState } from "../../../state";
+import {
+  NavComponentType,
+  SelectDrinkFunction,
+  CoffeeInfoType,
+  CloseModalFuction,
+} from "./DirectContainer";
 import LoaderExampleSizesInverted from "../../common/Loding";
+import DirectModal from "./DirectModal";
 import css from "styled-jsx/css";
 import axios from "axios";
 
 export default function DirectPresenter({ OrderNav }: NavComponentType) {
-  const [coffeeInfo, setCoffeeInfo] = useState<any>("");
+  const orderType = useRecoilValue(orderSelectState);
+
+  const [selectDrink, setSelectDrink] = useRecoilState(drinkSelectState);
+  const [coffeeInfo, setCoffeeInfo] = useState<CoffeeInfoType[]>([]);
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
+
+  const selectedDrink: SelectDrinkFunction = (
+    coffeeTitle,
+    coffeeImg,
+    coffeeDesc
+  ) => {
+    setSelectDrink({ title: coffeeTitle, img: coffeeImg, desc: coffeeDesc });
+    setModalOpen(true);
+  };
+
+  const closeModal: CloseModalFuction = () => {
+    setModalOpen(false);
+  };
 
   useEffect(() => {
     axios
       .get("https://api.sampleapis.com/coffee/hot")
       .then((res) => setCoffeeInfo(res.data));
-  }, []);
-
-  console.log(coffeeInfo);
-
-  const orderType = useRecoilValue(orderSelectState);
-
-  useEffect(() => {
-    console.log("order-type", orderType);
   }, []);
 
   return (
@@ -32,10 +47,16 @@ export default function DirectPresenter({ OrderNav }: NavComponentType) {
             <OrderNav />
             <p className="direct-product-text">주문상품을 골라주세요.</p>
             <div className="direct-product-left">
+              {modalOpen && <DirectModal selectDrink={selectDrink} />}
               <div className="direct-product-item">
-                {coffeeInfo.map((item: any) => {
+                {coffeeInfo.map((item: CoffeeInfoType) => {
                   return (
-                    <div className="product-list-box">
+                    <div
+                      className="product-list-box"
+                      onClick={() =>
+                        selectedDrink(item.title, item.image, item.description)
+                      }
+                    >
                       <img
                         className="product-list-img"
                         src={item.image}
